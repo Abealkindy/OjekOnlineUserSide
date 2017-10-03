@@ -34,7 +34,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                if (sessionManager.isLogin()){
+                if (sessionManager.isLogin()) {
                     startActivity(new Intent(SplashActivity.this, MainMapsActivity.class));
                     finish();
                 } else {

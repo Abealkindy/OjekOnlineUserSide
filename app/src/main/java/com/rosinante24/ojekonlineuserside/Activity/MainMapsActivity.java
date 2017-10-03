@@ -315,7 +315,7 @@ public class MainMapsActivity extends FragmentActivity implements OnMapReadyCall
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == 2){
+        if (requestCode == 2) {
             mMap.isMyLocationEnabled();
         }
     }

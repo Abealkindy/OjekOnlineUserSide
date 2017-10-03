@@ -304,13 +304,15 @@ public class DirectionMapsV2 {
 
                     //ambil distance text
                     distance = stepx.getJSONObject(TAG_DISTANCE);
-                    String jarak = distance.getString(TAG_TEXT);;
+                    String jarak = distance.getString(TAG_TEXT);
+                    ;
                     data.put("jarak", jarak);
 
 
                     //ambil durasi text
                     distance = stepx.getJSONObject(TAG_DURATION);
-                    String waktu = distance.getString(TAG_TEXT);;
+                    String waktu = distance.getString(TAG_TEXT);
+                    ;
                     data.put("durasi", waktu);
 
                     // ambil nilai polyline
@@ -319,7 +321,6 @@ public class DirectionMapsV2 {
                     data.put("points", point);
 
                     datax.add(data);
-
 
 
                 }
@@ -365,13 +366,15 @@ public class DirectionMapsV2 {
 
                     //ambil distance text
                     distance = stepx.getJSONObject(TAG_DISTANCE);
-                    String jarak = distance.getString(TAG_TEXT);;
+                    String jarak = distance.getString(TAG_TEXT);
+                    ;
                     data.put("jarak", jarak);
 
 
                     //ambil durasi text
                     distance = stepx.getJSONObject(TAG_DURATION);
-                    String waktu = distance.getString(TAG_TEXT);;
+                    String waktu = distance.getString(TAG_TEXT);
+                    ;
                     data.put("durasi", waktu);
 
                     durasiTotal += distance.getDouble("value");
@@ -394,10 +397,6 @@ public class DirectionMapsV2 {
     public int getTotalTime() {
         return totalTime;
     }
-
-
-
-
 
 
 }

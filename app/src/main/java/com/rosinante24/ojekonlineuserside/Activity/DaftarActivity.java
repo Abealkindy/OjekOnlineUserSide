@@ -82,17 +82,17 @@ public class DaftarActivity extends AppCompatActivity {
 
                 ApiServices api = InitLibrary.getInstances();
 
-                Call<ResponseRegister> call = api.request_register(usernamedaftar, emaildaftar, passworddaftar,phonenumberdaftar );
+                Call<ResponseRegister> call = api.request_register(usernamedaftar, emaildaftar, passworddaftar, phonenumberdaftar);
 
                 call.enqueue(new Callback<ResponseRegister>() {
                     @Override
                     public void onResponse(Call<ResponseRegister> call, Response<ResponseRegister> response) {
-                        if (response.isSuccessful()){
+                        if (response.isSuccessful()) {
                             String result = response.body().getResult();
                             String message = response.body().getMsg();
                             Toast.makeText(DaftarActivity.this, result, Toast.LENGTH_SHORT).show();
 
-                            if (result.equals("1")){
+                            if (result.equals("1")) {
                                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                                 finish();
                             } else {

@@ -52,7 +52,7 @@ public class HeroHelper {
     private static final int DEBUG = 1;
     public static final String APP = "ima-transfoodeApps";
     public static final String BASE_URL = "http://layanan-awan.com/absen/absen_android/index.php/Api/";
-//    public static final String BASE_URL = "http://admin.transfood-batam.com/index.php/API/";
+    //    public static final String BASE_URL = "http://admin.transfood-batam.com/index.php/API/";
     public static final String BASE_URL_IMAGE = "http://layanan-awan.com/absen/absen_android/uploads/";
     public static final String BASE_URL_IMAGE_PROFILE = "http://layanan-awan.com/absen/absen_android/photo_profile/";
     public static final String BASE_URL_UPLOAD = "http://layanan-awan.com/absen/absen_android/";
@@ -80,7 +80,6 @@ public class HeroHelper {
 
 
     }
-
 
 
     public static String convertStreamToString(InputStream is) throws Exception {
@@ -301,28 +300,28 @@ public class HeroHelper {
         }
     }
 
-    public static File resizeImage(File f ) {
+    public static File resizeImage(File f) {
         try {
             //decode image size
             BitmapFactory.Options o = new BitmapFactory.Options();
             o.inJustDecodeBounds = true;
-            BitmapFactory.decodeStream(new FileInputStream(f),null,o);
+            BitmapFactory.decodeStream(new FileInputStream(f), null, o);
 
             //Find the correct scale value. It should be the power of 2.
-            final int REQUIRED_SIZE= 200;
-            int width_tmp=o.outWidth, height_tmp=o.outHeight;
-            int scale=1;
-            while(true) {
-                if(width_tmp/2<REQUIRED_SIZE || height_tmp/2<REQUIRED_SIZE)
+            final int REQUIRED_SIZE = 200;
+            int width_tmp = o.outWidth, height_tmp = o.outHeight;
+            int scale = 1;
+            while (true) {
+                if (width_tmp / 2 < REQUIRED_SIZE || height_tmp / 2 < REQUIRED_SIZE)
                     break;
-                width_tmp/=2;
-                height_tmp/=2;
-                scale*=2;
+                width_tmp /= 2;
+                height_tmp /= 2;
+                scale *= 2;
             }
 
             //decode with inSampleSize
             BitmapFactory.Options o2 = new BitmapFactory.Options();
-            o2.inSampleSize=scale;
+            o2.inSampleSize = scale;
             Bitmap bitmap = BitmapFactory.decodeStream(new FileInputStream(f), null, o2);
 
             OutputStream outStream = null;
@@ -356,7 +355,8 @@ public class HeroHelper {
             return file;
 
 
-        } catch (FileNotFoundException e) {}
+        } catch (FileNotFoundException e) {
+        }
         return null;
     }
 
@@ -400,9 +400,6 @@ public class HeroHelper {
             return true;
         }
     }
-
-   
-
 
 
     // untuk check koneksi internet
@@ -977,19 +974,19 @@ public class HeroHelper {
         return Base64.encodeToString(byteArray, Base64.DEFAULT);
     }
 
-    public static double distance(double lat1, double lng1, double lat2, double lng2, String unit){
+    public static double distance(double lat1, double lng1, double lat2, double lng2, String unit) {
         double earthRadius = 6371.0;
-        if (unit.equalsIgnoreCase("M")){
+        if (unit.equalsIgnoreCase("M")) {
             earthRadius = 6371 * 1000;
-        }else if(unit.equalsIgnoreCase("N")){
-            earthRadius=6371.75;
+        } else if (unit.equalsIgnoreCase("N")) {
+            earthRadius = 6371.75;
         }
-        double dLat = Math.toRadians(lat2-lat1);
-        double dLng = Math.toRadians(lng2-lng1);
+        double dLat = Math.toRadians(lat2 - lat1);
+        double dLng = Math.toRadians(lng2 - lng1);
         double sindLat = Math.sin(dLat / 2);
         double sindLng = Math.sin(dLng / 2);
 
-        double a = Math.pow(sindLat,2)+ Math.pow(sindLng,2) * Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2));
+        double a = Math.pow(sindLat, 2) + Math.pow(sindLng, 2) * Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2));
         double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
         double dist = earthRadius * c;
         return dist;

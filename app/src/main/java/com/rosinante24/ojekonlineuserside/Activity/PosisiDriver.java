@@ -23,12 +23,14 @@ import java.util.TimerTask;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
 import com.rosinante24.ojekonlineuserside.Network.ApiServices;
 import com.rosinante24.ojekonlineuserside.Network.InitLibrary;
 import com.rosinante24.ojekonlineuserside.Activity.MainMapsActivity;
 import com.rosinante24.ojekonlineuserside.R;
 import com.rosinante24.ojekonlineuserside.Response.ResponseTracking;
 import com.rosinante24.ojekonlineuserside.Response.ResponseTrackingInduk;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -148,7 +150,7 @@ public class PosisiDriver extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK){
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
             AlertDialog.Builder alert = new AlertDialog.Builder(this);
             alert.setMessage("Where you wanna go?")
                     .setPositiveButton("Exit App", new DialogInterface.OnClickListener() {

@@ -118,8 +118,7 @@
             android:layout_marginLeft="@dimen/taudah_size"
             android:layout_weight="1"
             android:padding="@dimen/padding5dp"
-            android:text="No hp"
-            />
+            android:text="No hp" />
 
         <TextView
             android:id="@+id/txthpdriver"

@@ -9,23 +9,25 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class InitLibrary {
 
-    public static Retrofit setInit(){
+    public static Retrofit setInit() {
         return new Retrofit.Builder()
                 .baseUrl("http://192.168.100.15/ojeg_server/index.php/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
-    public static ApiServices getInstances(){
+
+    public static ApiServices getInstances() {
         return setInit().create(ApiServices.class);
     }
-    public static Retrofit initDirections(){
-        return  new Retrofit.Builder()
+
+    public static Retrofit initDirections() {
+        return new Retrofit.Builder()
                 .baseUrl("https://maps.googleapis.com/maps/api/directions/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
 
-    public static ApiServices getDirections(){
+    public static ApiServices getDirections() {
         return initDirections().create(ApiServices.class);
     }
 }
