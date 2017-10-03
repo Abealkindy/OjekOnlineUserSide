@@ -254,6 +254,8 @@ public class MainMapsActivity extends FragmentActivity implements OnMapReadyCall
         LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.getUiSettings().setAllGesturesEnabled(true);
+        mMap.getUiSettings().setMyLocationButtonEnabled(true);
     }
 
     @OnClick({R.id.lokasiawal, R.id.lokasitujuan, R.id.requestorder})
