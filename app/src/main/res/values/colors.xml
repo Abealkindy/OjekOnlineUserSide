@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#3f3f3f</color>
     <color name="colorAccent">#03d13a</color>
     <color name="text_color">#FFFF</color>
+    <color name="garis">#CCC</color>
 </resources>

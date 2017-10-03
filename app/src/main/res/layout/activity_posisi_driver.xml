@@ -18,45 +18,45 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/margin_edit_text"
         android:background="@drawable/baground"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="@dimen/margin_edit_text">
 
 
         <TextView
             android:id="@+id/lokasiawals"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_height="@dimen/jarak35dp"
+            android:layout_marginLeft="@dimen/margin_edit_text"
+            android:layout_marginRight="@dimen/margin_edit_text"
+            android:layout_marginTop="@dimen/padding5dp"
             android:background="@drawable/backgroundedittext"
             android:fontFamily="sans-serif-condensed"
             android:gravity="center"
-            android:hint="Dari Kemana ?"
+            android:hint="@string/hint_from"
             android:maxLines="1" />
 
         <TextView
             android:id="@+id/lokasitujuans"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_height="@dimen/jarak35dp"
+            android:layout_marginLeft="@dimen/margin_edit_text"
+            android:layout_marginRight="@dimen/margin_edit_text"
+            android:layout_marginTop="@dimen/padding5dp"
             android:background="@drawable/backgroundedittext"
             android:fontFamily="sans-serif-condensed"
             android:gravity="center"
-            android:hint="Mau Kemana ?"
+            android:hint="@string/hint_to"
             android:maxLines="1" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="@dimen/margin_edit_text"
+            android:layout_marginRight="@dimen/margin_edit_text"
             android:orientation="horizontal"
-            tools:mockup_opacity="5dp">
+            tools:mockup_opacity="@dimen/padding5dp">
 
 
         </LinearLayout>
@@ -67,21 +67,21 @@
     <LinearLayout
         android:id="@+id/linear2s"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="@dimen/text_size"
         android:layout_above="@+id/linear1s"
 
-        android:layout_marginBottom="5dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginBottom="@dimen/padding5dp"
+        android:layout_marginLeft="@dimen/margin_edit_text"
+        android:layout_marginRight="@dimen/margin_edit_text"
         android:background="@drawable/backgroundedittext"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="@dimen/text_size"
             android:layout_weight="1"
-            android:padding="5dp"
+            android:padding="@dimen/padding5dp"
             android:text="Nama Driver"
 
 
@@ -91,12 +91,11 @@
             android:id="@+id/txtnamadriver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginLeft="@dimen/padding5dp"
+            android:layout_marginRight="@dimen/padding5dp"
             android:layout_weight="1"
             android:gravity="right"
-            android:padding="5dp"
-            android:text="Nando Septian Husni"
+            android:padding="@dimen/padding5dp"
 
             />
 
@@ -105,20 +104,20 @@
     <LinearLayout
         android:id="@+id/linear1s"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="@dimen/taudah_size"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="5dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginBottom="@dimen/padding5dp"
+        android:layout_marginLeft="@dimen/margin_edit_text"
+        android:layout_marginRight="@dimen/margin_edit_text"
         android:background="@drawable/backgroundedittext"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="@dimen/taudah_size"
             android:layout_weight="1"
-            android:padding="5dp"
+            android:padding="@dimen/padding5dp"
             android:text="No hp"
             />
 
@@ -126,12 +125,11 @@
             android:id="@+id/txthpdriver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginLeft="@dimen/padding5dp"
+            android:layout_marginRight="@dimen/padding5dp"
             android:layout_weight="1"
             android:gravity="right"
-            android:padding="5dp"
-            android:text="087429487"
+            android:padding="@dimen/padding5dp"
 
             />
 

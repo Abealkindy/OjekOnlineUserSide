@@ -12,4 +12,10 @@
     <string name="text_button_daftar">Daftar</string>
     <string name="text_link_to_register">Belum punya akun?, daftar disini</string>
     <string name="text_button_cancel">Cancel</string>
+    <string name="hint_from">Dari mana?</string>
+    <string name="hint_to">Kemana?</string>
+    <string name="text_price">Harga : </string>
+    <string name="text_button_order">Order</string>
+    <string name="title_menu_1">History</string>
+    <string name="title_menu_2">Profil</string>
 </resources>

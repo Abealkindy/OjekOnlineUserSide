@@ -1,8 +1,117 @@
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.rosinante24.ojekonlineuserside.Activity.MainMapsActivity" />
+    tools:context="com.rosinante24.ojekonlineuserside.Activity.MainMapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_edit_text"
+        android:background="@drawable/baground"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_edit_text">
+
+
+        <EditText
+            android:id="@+id/lokasiawal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/jarak35dp"
+            android:layout_marginLeft="@dimen/margin_edit_text"
+            android:layout_marginRight="@dimen/margin_edit_text"
+            android:layout_marginTop="@dimen/padding5dp"
+            android:background="@drawable/backgroundedittext"
+            android:focusable="false"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:hint="@string/hint_from"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/lokasitujuan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/jarak35dp"
+            android:layout_marginLeft="@dimen/margin_edit_text"
+            android:layout_marginRight="@dimen/margin_edit_text"
+            android:layout_marginTop="@dimen/padding5dp"
+            android:background="@drawable/backgroundedittext"
+            android:focusable="false"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:hint="@string/hint_to"
+            android:maxLines="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_edit_text"
+            android:layout_marginRight="@dimen/margin_edit_text"
+            android:orientation="horizontal"
+            tools:mockup_opacity="@dimen/padding5dp">
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_size"
+        android:layout_above="@+id/requestorder"
+        android:layout_marginBottom="@dimen/padding5dp"
+        android:layout_marginLeft="@dimen/margin_edit_text"
+        android:layout_marginRight="@dimen/margin_edit_text"
+        android:background="@drawable/backgroundedittext"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_size"
+            android:layout_weight="1"
+            android:padding="@dimen/padding5dp"
+            android:text="@string/text_price"
+
+
+            />
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding5dp"
+            android:layout_marginRight="@dimen/padding5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="@dimen/padding5dp"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/requestorder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margintopsplash"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_edit_text"
+        android:layout_marginLeft="@dimen/margin_edit_text"
+        android:layout_marginRight="@dimen/margin_edit_text"
+        android:background="@drawable/groundbutton"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/text_button_order"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color" />
+
+
+</RelativeLayout>
+

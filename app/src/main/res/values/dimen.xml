@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="text_size">30sp</dimen>
+    <dimen name="taudah_size">30dp</dimen>
     <dimen name="text_title_size">40sp</dimen>
     <dimen name="text_link_register_size">17sp</dimen>
     <dimen name="image_size">150dp</dimen>
@@ -9,4 +10,7 @@
     <dimen name="marginbottombutton">20dp</dimen>
     <dimen name="height_edit_text">45dp</dimen>
     <dimen name="margin_edit_text">10dp</dimen>
+    <dimen name="padding5dp">5dp</dimen>
+    <dimen name="jarak35dp">35dp</dimen>
+    <dimen name="jarak1dp">1dp</dimen>
 </resources>
