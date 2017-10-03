@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/margintopsplash"
+    tools:context="com.rosinante24.ojekonlineuserside.Activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/text_title_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title_activity_login"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_title_size" />
+
+    <EditText
+        android:id="@+id/edit_text_email_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_edit_text"
+        android:layout_marginTop="@dimen/margintopsplash"
+        android:background="@drawable/backgroundedittext"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/edit_text_password_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_edit_text"
+        android:layout_marginTop="@dimen/margin_edit_text"
+        android:background="@drawable/backgroundedittext"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button_masuk_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_edit_text"
+        android:layout_marginBottom="@dimen/marginbottombutton"
+        android:layout_marginTop="@dimen/margintopbutton"
+        android:background="@drawable/groundbutton"
+        android:text="@string/text_button_login"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/text_link_to_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/text_link_to_register"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_link_register_size" />
+</LinearLayout>

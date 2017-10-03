@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Jek</string>
+    <string name="title_activity_main_maps">Map</string>
+    <string name="title_activity_login">Log In</string>
+    <string name="title_activity_daftar">Register</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_confirm_password">Confirm password</string>
+    <string name="hint_phone_number">Phone number</string>
+    <string name="text_button_login">Masuk</string>
+    <string name="text_button_daftar">Daftar</string>
+    <string name="text_link_to_register">Belum punya akun?, daftar disini</string>
+    <string name="text_button_cancel">Cancel</string>
+</resources>
